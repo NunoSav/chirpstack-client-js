@@ -19,7 +19,7 @@ export interface ClientOptions {
 interface Client {
   getAllApplications(): Promise<Applications>;
   getAllDevices(): Promise<Devices>;
-  getDevices(applicationIdentifier: number): Promise<Devices>;
+  getDevices(applicationIdentifier: string): Promise<Devices>;
   downlinkQueuePush(devices: Device[], payload: Payload): Promise<void>;
   downlinkQueueReplace(devices: Device[], payload: Payload): Promise<void>;
   setAPIKey(key: string): void;
