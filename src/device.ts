@@ -17,7 +17,7 @@ export interface Device {
     name: string;
 
     // Application ID.
-    applicationID: number;
+    applicationID: string;
 
     // Description of the device.
     description: string;

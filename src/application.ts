@@ -9,7 +9,7 @@ export interface Applications {
 
 export interface Application {
   // Application ID.
-  id: number;
+  id: string;
 
   // Name of the application.
   name: string;
@@ -18,7 +18,7 @@ export interface Application {
   description: string;
 
   // ID of the organization to which the application belongs.
-  organizationID: number;
+  organizationID: string;
 
   // ID of the service profile.
   serviceProfileID: string;
