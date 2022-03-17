@@ -1,6 +1,6 @@
 {
   "name": "chirpstack-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Javascript client for ChirpStack API",
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",
