@@ -1,6 +1,6 @@
 import { client, ClientOptions } from './client';
-import { Application, Applications, ApplicationIdentifiers } from './application';
-import { Device, Devices, DeviceIdentifiers } from './device';
+import { Application, Applications } from './application';
+import { Device, Devices } from './device';
 import { Downlink, Payload, DownlinkQueueMethod } from './downlink';
 
 export {
@@ -8,10 +8,8 @@ export {
   ClientOptions,
   Application,
   Applications,
-  ApplicationIdentifiers,
   Device,
   Devices,
-  DeviceIdentifiers,
   Downlink,
   Payload,
   DownlinkQueueMethod,
