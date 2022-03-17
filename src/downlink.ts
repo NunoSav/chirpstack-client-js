@@ -35,14 +35,14 @@ export interface Downlink {
    * Base64 encoded data.
    * Or use the jsonObject field when an application codec has been configured.
    */
-  data: string;
+  data?: string;
 
   /**
    * JSON object (string).
    * Only use this when an application codec has been configured that can convert
    * this object into binary form.
    */
-  jsonObject: string;
+  jsonObject?: string;
 }
 
 export enum DownlinkQueueMethod {
