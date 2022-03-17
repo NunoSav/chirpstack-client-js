@@ -1,0 +1,31 @@
+{
+  "name": "chirpstack-client",
+  "version": "0.0.1",
+  "description": "Javascript client for ChirpStack API",
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm run clean && tsc -p . && tsc --module commonjs --outDir dist/cjs -p .",
+    "clean": "rm -rf dist",
+    "publish": "pnpm run build && pnpm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/nunosav/chirpstack-client-js"
+  },
+  "keywords": [
+    "chirpstack",
+    "chirpstack client",
+    "chirpstack client js"
+  ],
+  "author": "nunosav@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
