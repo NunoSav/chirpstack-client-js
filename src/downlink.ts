@@ -24,16 +24,16 @@ export interface Downlink {
    * Downlink frame-counter.
    * This will be automatically set on enquue.
    */
-  f_cnt?: number;
+  fCnt?: number;
 
   /**
    * FPort used (must be > 0)
    */
-  f_port: number;
+  fPort: number;
 
   /**
    * Base64 encoded data.
-   * Or use the json_object field when an application codec has been configured.
+   * Or use the jsonObject field when an application codec has been configured.
    */
   data: string;
 
@@ -42,7 +42,7 @@ export interface Downlink {
    * Only use this when an application codec has been configured that can convert
    * this object into binary form.
    */
-  json_object: string;
+  jsonObject: string;
 }
 
 export enum DownlinkQueueMethod {
