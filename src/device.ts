@@ -75,14 +75,14 @@ export async function getAllDevices(): Promise<Devices> {
   return devices;
 }
 
-export async function getDevices(applicationId: string): Promise<Devices> {
+export async function getDevices(applicationID: string): Promise<Devices> {
   const url = `${chirpstackConfig.domain}/api/devices`;
 
   const { data } = await axios.get<Devices>(url, {
     headers: chirpstackConfig.headers,
     params: {
       limit: 10000,
-      applicationId,
+      applicationID,
     }
   });
 
